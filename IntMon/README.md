@@ -3,6 +3,8 @@
  With many 20s or 30s of CPUs and it is hard to track which interface or device is causing the Interrups on a heavily loaded system.
  This handy tool will help to give a summary
  
+ 
+ ```
  ./intmon
 
 HELP
@@ -17,7 +19,7 @@ Usage :  ./intmon -i [--interval] -t [--threshold]
    Interval: Interval to print output
    Threshold : Print only if rate is above this value
 
-'''
+
 
 ./intmon  -i 1 -t 10
 
@@ -39,4 +41,4 @@ Usage :  ./intmon -i [--interval] -t [--threshold]
 2018-11-09 11:33:36.921687       CPU2    ens192-rxtx-0           11
 2018-11-09 11:33:36.921759       CPU2    ens160-rxtx-0           13
 
-'''
+```
