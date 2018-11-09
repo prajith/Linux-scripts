@@ -1,6 +1,6 @@
 # Linux-scripts -intmon -  Interrupt monitoring Script 
 
- With machines with 20 or 30 of CPUs,  it difficult to  track or even observe interrupt pattern, especially on a heavily loaded system.
+ With machines with 20 or 30  CPUs,  it difficult to  track or even observe interrupt pattern, especially on a heavily loaded system.
  This handy tool will help to give a summary
  
  
