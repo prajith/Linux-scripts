@@ -90,7 +90,7 @@ except (getopt.GetoptError,ValueError), e:
      usage(sys.argv[0])
      sys.exit(2)
 
-## Print output in indefinite Loop and print rate of Interrupts per CPU based on inputs specified. 
+## Print output in infinite Loop and print rate of Interrupts per CPU based on inputs specified. 
 
 while True:
   Time1=ex()
