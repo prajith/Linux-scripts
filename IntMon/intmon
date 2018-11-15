@@ -11,7 +11,7 @@ def signal_handler(sig, frame):
 
 def usage(program):
     print("\nHELP\n---------\nThis Program will print rate of Interrupts per device\n\n")
-    print("\nUsage :  {} -i [--interval] -t [--threshold] ".format(program))
+    print("\nUsage :  {} -i [interval] -t [threshold] ".format(program))
     print("\n\n   Interval: Interval to print output \n   Threshold : Print only if rate is above this value")
  
     
@@ -68,14 +68,16 @@ try:
    
    opts, args = getopt.getopt(sys.argv[1:], "hi:t:", ["help", "interval=", "threshold="]) 
 
-
+   if "-t" not in sys.argv and "-i" not in sys.argv:
+      usage(sys.argv[0])
+      sys.exit()
    for o, a in opts:
-        if o in ("-h", "--help"):
+        if o in ("-h"):
             usage(sys.argv[0])
             sys.exit()
-        elif o in ('-i', "--interval"):
+        elif o in ('-i'):
             Interval = int(a)
-        elif o in ('-t', "--threshold"):
+        elif o in ('-t'):
             Value = int(a)
         else:
             assert False, "unhandled option"
